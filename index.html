@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://app.embed.im/snow.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- Espero que no te moleste que haya ido un poco a mi bola,
+    he intentado ser creativo y hacer algo con animaciones para practicar :) -->
+
+  <main>
+
+    <div id="sended-data" class="sended-data hidden-data">
+      <h3>Congrats!</h3>
+      <p>We have received your data</p>
+    </div>
+
+    <section id="art-section" class="art-section">
+      <lottie-player id="rocket-image" class="art-asset" src="https://assets8.lottiefiles.com/packages/lf20_ii6qdbgz.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+      <lottie-player id="planet-image" class="art-asset" src="https://assets6.lottiefiles.com/packages/lf20_pwjsa2gu.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+      <lottie-player id="sun-image" class="art-asset" src="https://assets6.lottiefiles.com/packages/lf20_drtuqy1z.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+
+    </section>
+
+    <section id="form-section" class="form-section">
+
+      <p class="login-text">Already have an account? <span class="login-link">Login</span></p>
+
+      <form class="form">
+
+        <h1 class="form-title">Create account</h1>
+
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
+        <div id="password-container" class="password-container">
+
+          <div>
+            <label for="password">Password</label>
+
+            <div class="password-input">
+              <input id="password-input" type="password">
+              <span id="password-button" class="material-icons">
+                visibility_off
+              </span>
+            </div>
+
+          </div>
+
+          <div>
+            <label for="password">Confirm</label>
+
+            <div class="password-input">
+              <input id="confirm-password-input" type="password">
+              <span id="confirm-password-button" class="material-icons">
+                visibility_off
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="conditions-container">
+          <div class="checkbox-wrapper-23">
+            <input type="checkbox" id="check-23"/>
+            <label for="check-23" style="--size: 20px">
+              <svg viewBox="0,0,50,50">
+                <path d="M5 30 L 20 45 L 45 5"></path>
+              </svg>
+            </label>
+          </div>
+          <p>By creating an account, you agree to the Terms of Service and Conditions, and Privacy Policy</p>
+        </div>
+
+        <button id="form-button" type="submit">Create account</button>
+
+        <p class="divider">or</p>
+
+        <button class="continue-with-button">
+          <img class="login-icon" src="./assets/google.png" alt="google">
+          <p>Continue with Google</p>
+        </button>
+
+        <button class="continue-with-button">
+          <img class="login-icon" src="./assets/facebook.svg" alt="facebook">
+          <p>Continue with Facebook</p>
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
